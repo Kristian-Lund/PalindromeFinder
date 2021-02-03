@@ -1,8 +1,8 @@
-#import os,sys,inspect
-#currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-#parentdir = os.path.dirname(currentdir)
-#sys.path.insert(1,currentdir)
-#sys.path.insert(0,parentdir)
+import os,sys,inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(1,currentdir)
+sys.path.insert(0,parentdir)
 
 from unittest import TestCase
 from palindrome import is_palindrome
@@ -43,7 +43,7 @@ class TestIs_palindrome(TestCase):
   #Adding an example with testcases from a file, increasing abstraction layer for addign test
   def test_Test_Cases_From_File(self):
 
-    f = open('PalindromesToTest.txt', 'r')
+    f = open('./PalindromesToTest.txt', 'r')
     TestCasesForPalindromes = MakeSpreadSheet(f.read())
     for TestCaseForPalindrome in TestCasesForPalindromes:
       with self.subTest():
