@@ -43,7 +43,7 @@ class TestIs_palindrome(TestCase):
   #Adding an example with testcases from a file, increasing abstraction layer for addign test
   def test_Test_Cases_From_File(self):
 
-    f = open('./PalindromesToTest.txt','r')
+    f = open('Test/PalindromesToTest.txt','r')
     TestCasesForPalindromes = MakeSpreadSheet(f.read())
     for TestCaseForPalindrome in TestCasesForPalindromes:
       with self.subTest():
