@@ -46,6 +46,7 @@ class TestIs_palindrome(TestCase):
 
   def test_Test_Cases_From_File(self):
     print('Hei')
+    print(currentdir)
     f = open('PalindromesToTest.txt', 'r')
     TestCasesForPalindromes = MakeSpreadSheet(f.read())
     f.close()
