@@ -45,7 +45,7 @@ class TestIs_palindrome(TestCase):
   #Adding an example with testcases from a file, increasing abstraction layer for adding test
 
   def test_Test_Cases_From_File(self):
-    f = open('./PalindromesToTest.txt', 'r')
+    f = open('PalindromesToTest.txt', 'r')
     TestCasesForPalindromes = MakeSpreadSheet(f.read())
     f.close()
     for TestCaseForPalindrome in TestCasesForPalindromes:
