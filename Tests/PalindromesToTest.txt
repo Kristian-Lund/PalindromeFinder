@@ -1,5 +1,7 @@
-racecar,True
-Never odd or even,True
-GNever odd or eveng,True
-Agnes i senga,True
-12racecar21,False
+racecar	TRUE
+Never odd or even	TRUE
+GNever odd or eveng	TRUE
+Agnes i senga	TRUE
+12racecar21	FALSE
+Aha	TRUE
+A man, a plan, a canal, Panama  NAK
