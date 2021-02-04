@@ -4,4 +4,4 @@ GNever odd or eveng	TRUE
 Agnes i senga	TRUE
 12racecar21	FALSE
 Aha	TRUE
-A man, a plan, a canal, Panama  NAK
+A man, a plan, a canal, Panama	NAK

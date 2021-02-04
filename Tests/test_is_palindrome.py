@@ -6,7 +6,7 @@ sys.path.insert(0,parentdir)
 
 from unittest import TestCase
 from palindrome import is_palindrome
-from Helpers import MakeSpreadSheet
+from Helpers import MakeTestCaseList
 
 
 
@@ -46,7 +46,7 @@ class TestIs_palindrome(TestCase):
 
   def test_Test_Cases_From_File(self):
     f = open(currentdir + '/PalindromesToTest.txt', 'r')
-    TestCasesForPalindromes = MakeSpreadSheet(f.read())
+    TestCasesForPalindromes = MakeTestCaseList(f.read())
     f.close()
     for TestCaseForPalindrome in TestCasesForPalindromes:
       with self.subTest():
