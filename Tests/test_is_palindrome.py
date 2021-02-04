@@ -48,7 +48,7 @@ class TestIs_palindrome(TestCase):
     print('Hei')
     print(currentdir)
     print(os.listdir(currentdir))
-    f = open('PalindromesToTest.txt', 'r')
+    f = open(currentdir + '/PalindromesToTest.txt', 'r')
     TestCasesForPalindromes = MakeSpreadSheet(f.read())
     f.close()
     for TestCaseForPalindrome in TestCasesForPalindromes:
