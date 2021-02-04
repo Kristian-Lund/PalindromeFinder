@@ -1,0 +1,5 @@
+racecar,True
+Never odd or even,True
+GNever odd or eveng,True
+Agnes i senga,True
+12racecar21,False
