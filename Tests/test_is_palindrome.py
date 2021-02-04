@@ -41,10 +41,11 @@ class TestIs_palindrome(TestCase):
 
 
   #Adding an example with testcases from a file, increasing abstraction layer for addign test
-  def test_Test_Cases_From_File(self):
-
-    f = open('./PalindromesToTest.txt', 'r')
-    TestCasesForPalindromes = MakeSpreadSheet(f.read())
-    for TestCaseForPalindrome in TestCasesForPalindromes:
-      with self.subTest():
-        self.assertEqual(is_palindrome(TestCaseForPalindrome[0]), TestCaseForPalindrome[1] == "True",TestCaseForPalindrome[0] + 'does not test: ' + TestCaseForPalindrome[1])
+  #
+  #def test_Test_Cases_From_File(self):
+#
+#    f = open('./PalindromesToTest.txt', 'r')
+#    TestCasesForPalindromes = MakeSpreadSheet(f.read())
+#    for TestCaseForPalindrome in TestCasesForPalindromes:
+#      with self.subTest():
+ #       self.assertEqual(is_palindrome(TestCaseForPalindrome[0]), TestCaseForPalindrome[1] == "True",TestCaseForPalindrome[0] + 'does not test: ' + TestCaseForPalindrome[1])
