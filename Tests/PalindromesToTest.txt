@@ -5,3 +5,5 @@ Agnes i senga	TRUE
 12racecar21	FALSE
 Aha	TRUE
 A man, a plan, a canal, Panama	NAK
+En ranet Unni sier: Stas at rom-nissen ga dem et ømt møte med Agnes sin mor	NAK
+Lek noe rart, rare onkel!	TRUE
