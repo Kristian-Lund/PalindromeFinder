@@ -25,6 +25,9 @@ class TestIs_palindrome(TestCase):
     self.assertEqual(is_palindrome("Agnes, i senga"), True)
   def test_Spes_Character_Late(self):
     self.assertEqual(is_palindrome("Agnes i ,senga"), True)
+  def test_EmptyString(self):
+    self.assertEqual(is_palindrome(""), True)
+
 
   #The following should maybe be true
   def test_Capital_Letters(self):
