@@ -27,7 +27,7 @@ class TestIs_palindrome(TestCase):
     self.assertEqual(is_palindrome("Agnes i ,senga"), True)
 
   #The following should maybe be true
-  def test_CapitolLetters(self):
+  def test_Capital_Letters(self):
     self.assertEqual(is_palindrome("NEVER ODD OR EVEN"), False)
   def test_Numbers(self):
     self.assertEqual(is_palindrome("11223eLe32211"), False)
