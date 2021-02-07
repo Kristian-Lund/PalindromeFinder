@@ -40,9 +40,9 @@ class TestIs_palindrome(TestCase):
     self.assertEqual(is_palindrome("\"Never odd or even\""), False)
 
   #Negative Tests
-  def test_Non_Palindrome(self):
+  def test_Non_PalindromeWord(self):
     self.assertEqual(is_palindrome("Taxicar"), False)
-  def test_Non_Palindrome(self):
+  def test_Non_PalindromeSentence(self):
     self.assertEqual(is_palindrome("Never Even or odd"), False)
   # The following should be false
   def test_Some_Strange_Behaviour(self):
