@@ -25,16 +25,23 @@ class TestIs_palindrome(TestCase):
     self.assertEqual(is_palindrome("Agnes, i senga"), True)
   def test_Spes_Character_Late(self):
     self.assertEqual(is_palindrome("Agnes i ,senga"), True)
+  def test_EmptyString(self):
+    self.assertEqual(is_palindrome(""), True)
 
-  #The following should be true
-  def test_End_Must_be_Lowercase(self):
+
+  #The following should maybe be true
+  def test_Capital_Letters(self):
     self.assertEqual(is_palindrome("NEVER ODD OR EVEN"), False)
   def test_Numbers(self):
     self.assertEqual(is_palindrome("11223eLe32211"), False)
   def test_Remove_Spes_Characters_Front(self):
     self.assertEqual(is_palindrome(" Never odd or even"), False)
+  def test_With_Quotes(self):
+    self.assertEqual(is_palindrome("\"Never odd or even\""), False)
 
   #Negative Tests
+  def test_Non_Palindrome(self):
+    self.assertEqual(is_palindrome("Taxicar"), False)
   def test_Non_Palindrome(self):
     self.assertEqual(is_palindrome("Never Even or odd"), False)
   # The following should be false
