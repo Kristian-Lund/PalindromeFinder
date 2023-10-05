@@ -8,6 +8,7 @@ def is_special(char: str) -> bool:
     return regular.match(char) == None
 
 
+
 def is_palindrome(input: str) -> bool:
     str_len = len(input)
     start_pos = 0
